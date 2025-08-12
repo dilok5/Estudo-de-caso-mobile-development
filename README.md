@@ -50,5 +50,6 @@ expo start
 <div align="center" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
   <img src="./screenshots/login-screen.png" alt="Tela de Login" width="200" />
   <img src="./screenshots/products-screen.png" alt="Catálogo de Produtos" width="200" />
+  <img src="./screenshots/products-screen-2.png" alt="Catálogo de Produtos" width="200" />
   <img src="./screenshots/details-screen.png" alt="Detalhes do Produto" width="200" />
 </div>
