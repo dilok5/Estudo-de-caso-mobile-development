@@ -1,7 +1,7 @@
-import { Image, Text, View } from "react-native";
-import { styles } from "./manDetailsStyles";
-import { useSelector } from "react-redux";
 import { RootState } from "@/src/store";
+import { Image, Text, View } from "react-native";
+import { useSelector } from "react-redux";
+import { styles } from "./manDetailsStyles";
 
 export type DetailsManItem = {
   images: string[];
@@ -21,11 +21,11 @@ export const DetailsMan = () => {
     <View style={styles.tela}>
       <Image 
         style={styles.imagem} 
-        source={{ uri: item?.images[0] }} 
+        source={{ uri: detailsMan?.images[0] }} 
       />
-      <Text style={styles.titulo}>{item?.title}</Text>
-      <Text style={styles.preco}>R$ {item?.price}</Text>
-      <Text style={styles.desc}>{item?.description}</Text>
+      <Text style={styles.titulo}>{detailsMan?.title}</Text>
+      <Text style={styles.preco}>R$ {detailsMan?.price}</Text>
+      <Text style={styles.desc}>{detailsMan?.description}</Text>
     </View>
   );
 };
